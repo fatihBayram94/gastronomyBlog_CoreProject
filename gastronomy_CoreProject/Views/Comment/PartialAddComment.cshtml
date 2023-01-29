@@ -1,0 +1,20 @@
+﻿<section class="w3l-form-comments-sec mt-5">
+    <div class="coments-forms-sub">
+        <h3 class="title-main2-blog-single">Bir Yorum Bırak</h3>
+        <div class="form-commets">
+            <form action="/Comment/PartialAddComment/" method="post">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <input class="form-control" type="text" name="CommentUserName"  placeholder="İsim ve Soyisim">
+                    </div>
+                    <div class="col-md-6 mt-md-0 mt-4">
+                        <input class="form-control" type="email" name="CommentTitle" placeholder="Email">
+                    </div>
+                </div>
+                <textarea class="form-control" name="CommentContent" 
+                          placeholder="Yorumunuz..."></textarea>
+                <button class="btn button-style d-flex ml-auto" type="submit">Gönder</button>
+            </form>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+﻿@using EntityLayer.Concrete
+@model List<Blog>
+
+    @foreach(var item in Model)
+    {
+<div class="col-lg-4 col-md-6 column column-img" id="zoomIn">
+                        <div class="services-gd">
+                            <div class="serve-info">
+                                    <h3 class="date">@item.BlogCreateDate</h3>
+                                <a href="blog-single.html">
+                                    <figure>
+                                        <img class="img-responsive" src="@item.BlogImage" alt="blog-image">
+                                    </figure>
+                                </a>
+                                        <h3> <a href="/blog/blogReadAll/@item.BlogID" class="vv-link">@item.BlogTitle
+                                </h3>
+                                <ul class="admin-list">
+                                    <li><a href="blog-single.html"><span class="fa fa-user-circle"
+                                                aria-hidden="true"></span>
+                                            Admin</a></li>
+                                    <li><a href="blog-single.html"><span class="fa fa-heart" aria-hidden="true"></span>5
+                                            Beğeni</a></li>
+                                    <li><a href="blog-single.html"><span class="fa fa-comments"
+                                                aria-hidden="true"></span>3 Yorum </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+}
